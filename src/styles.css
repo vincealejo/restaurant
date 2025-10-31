@@ -4,7 +4,8 @@
     margin: 0;
     --bg-prime: rgb(199, 103, 47);
     --bg-second: rgb(228, 111, 111);
-    --bg-button: #e8f46a;
+    --bg-button: rgb(232, 244, 106);
+    --content-bg: rgb(244, 249, 189);
 }
 
 button {
@@ -31,6 +32,13 @@ header {
    
 }
 
+.title {
+        margin-bottom: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+}
+
+
 #content {
     width: 75%;
     height: calc(100vh - 8rem);
@@ -47,6 +55,7 @@ header {
         background-image: url("./asset/restaurant-interior.jpg");
         background-size: cover;
         background-position: center;
+        margin-bottom: 1rem;
         
             .logo {
                 position: absolute;
@@ -60,15 +69,15 @@ header {
                 padding: 1rem;
             }
         }
+
+        .about-text {
+            background-color: var(--content-bg);
+            padding: 2rem;
+            border-radius: 8px;
+        }
     }
 
     #menu {
-
-        .title {
-            margin-bottom: 1rem;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: underline;
-        }
 
         .menu-container {
             display: grid;
@@ -109,6 +118,15 @@ header {
             .menu-item-credit-text {
                 font-size: 12px;
             }
+        }
+    }
+
+    .contact {
+        .contact-cont {
+            background-color: var(--content-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 24px;
         }
     }
 }
